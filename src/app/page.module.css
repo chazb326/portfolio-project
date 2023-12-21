@@ -8,6 +8,34 @@
     gap: 10px;
 }
 
+.navHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    font-size: medium;
+    list-style-type: none;
+}
+
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    width: 70%; 
+    height: 400px; 
+    border: 1px solid red; 
+    position: relative; 
+    margin: 0 auto; 
+    top: 100px;
+}
+
 .columnBox {
     display: flex;
     flex-direction: column;

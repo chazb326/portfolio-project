@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-export default function Home() {
+export default function Contact() {
   return (
     <main className={styles.main}>
       <div
@@ -12,7 +12,7 @@ export default function Home() {
           fontWeight: "bolder",
         }}
       >
-        This is the home page
+        This is the contact page
       </div>
     </main>
   );

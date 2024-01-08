@@ -3,7 +3,7 @@
 import "./globals.css";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ backgroundColor: "rgba(30, 107, 76, 0.3)" }}>
         <header className={styles.navContainer}>
           <h1 style={{ fontSize: "xxx-large" }}>Charlie Burian</h1>
           <ul className={styles.navLinks} style={{ width: "50%" }}>

@@ -30,10 +30,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: whitesmoke;
   z-index: 10;
   margin: 0;
-  box-shadow: 0px 0px 8px rgb(0 0 0 / 30%);
+  box-shadow: 0px 0px 12px rgb(0 0 0 / 60%);
 }
 
 .navLinks {

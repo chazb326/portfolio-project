@@ -18,61 +18,6 @@
   gap: 10px;
 }
 
-.navContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 10px;
-  padding: 10px;
-  gap: 10px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: whitesmoke;
-  z-index: 10;
-  margin: 0;
-  box-shadow: 0px 0px 12px rgb(0 0 0 / 60%);
-}
-
-.navLinks {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 10px;
-  padding: 10px;
-  gap: 10px;
-  font-size: medium;
-  list-style-type: armenian;
-  font-size: x-large;
-  text-wrap: nowrap;
-}
-
-.link {
-  text-decoration: none;
-  color: #1e3d6b;
-  font-weight: normal;
-  font-size: x-large;
-}
-
-.link:active {
-  text-decoration: none;
-  color: #1e6b4c;
-}
-
-.active {
-  font-weight: 800;
-  color: #1e6b4c;
-  text-decoration: underline;
-}
-
-.link:hover {
-  font-weight: 800;
-  color: #1e6b4c;
-}
-
 .pageContent {
   display: flex;
   flex-direction: column;
@@ -96,13 +41,10 @@ h4.headerSmall {
   font-size: larger;
 }
 
-img.headshot {
-  width: 45%;
+img.linkedin {
+  width: 30%;
   height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 15%;
-  box-shadow: 4px 4px 8px rgb(0 0 0 / 30%);
+  margin: 12px auto;
 }
 
 .section {
@@ -114,7 +56,6 @@ img.headshot {
   box-shadow: 4px 4px 8px rgb(0 0 0 / 30%);
   transition: all 0.5s ease;
   gap: 20px;
-  padding: 20px;
 }
 
 .sectionDrawer {

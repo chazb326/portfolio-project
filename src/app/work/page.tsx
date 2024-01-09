@@ -55,7 +55,7 @@ export default function Work() {
                   <li>Frontend Development</li>
                 </ul>
                 <span></span>
-                <p>
+                <p style={{ marginTop: "20px" }}>
                   See the Galileo website{" "}
                   <span>
                     <a
@@ -66,7 +66,7 @@ export default function Work() {
                     </a>
                   </span>
                 </p>
-                <p>
+                <p style={{ marginTop: "20px" }}>
                   See the PanOptic website{" "}
                   <span>
                     <a
@@ -107,10 +107,13 @@ export default function Work() {
               <div className={sectionDrawers}>
                 <h3>What am I learning through Codecademy?</h3>
                 <p>Full-Stack Engineer career-path. Skills?</p>
-                <ul className={styles.list}>
+                <ul className={styles.skillList}>
                   <li>Git & Source control</li>
+                  <li>Frontend & Web development</li>
+                  <li>Backend development (databases & APIs)</li>
+                  <li>Security & Networking</li>
                 </ul>
-                <p>
+                <p style={{ marginTop: "20px" }}>
                   See the course{" "}
                   <span>
                     <a
@@ -142,7 +145,14 @@ export default function Work() {
             </button>
             {drawerThree && (
               <div className={sectionDrawers}>
-                <p>
+                <h3>What am I learning through the CKA course?</h3>
+                <ul className={styles.skillList}>
+                  <li>Kubernetes core concepts & architecture</li>
+                  <li>Cluster Creation & Maintenance</li>
+                  <li>Cluster Security & Networking</li>
+                  <li>Exam prep for CKA Test</li>
+                </ul>
+                <p style={{ marginTop: "20px" }}>
                   See the course{" "}
                   <span>
                     <a

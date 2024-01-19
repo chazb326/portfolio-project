@@ -1,16 +1,18 @@
 interface DividerProps {
-  height: number;
+  height?: number;
+  width?: number;
   color: "gray" | "black" | "red" | "blue" | "green";
 }
 
-const Divider = ({ height, color }: DividerProps) => {
+const Divider = ({ height, width, color }: DividerProps) => {
   const borderString = `1px solid ${color}`;
   const heightString = `${height}px`;
+  const widthString = `${width}px`;
 
   return (
     <div
-      style={{ border: borderString, height: heightString, width: "0" }}
-    ></div>
+      style={{ border: borderString, height: heightString, width: widthString }}
+    />
   );
 };
 

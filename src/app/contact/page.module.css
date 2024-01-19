@@ -44,12 +44,12 @@ h4.headerSmall {
 img.linkedin {
   width: 30%;
   height: auto;
-  margin: 12px auto;
+  margin: 0 auto;
 }
 
 .section {
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
   min-width: 300px;
   background-color: whitesmoke;
   border-radius: 20px;

@@ -8,10 +8,12 @@ import cka from "../../../public/cka-course.png";
 import clsx from "clsx";
 import { Divider } from "../components/Divider";
 import { useState } from "react";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function Work() {
   const sections = clsx(styles.section, styles.columnBox);
   const sectionDrawers = clsx(styles.sectionDrawer, styles.columnBox);
+  const isDesktop = useMediaQuery("(min-width: 960px)");
   const [drawerOne, setDrawerOne] = useState(false);
   const [drawerTwo, setDrawerTwo] = useState(false);
   const [drawerThree, setDrawerThree] = useState(false);
@@ -22,6 +24,7 @@ export default function Work() {
         className={styles.pageContent}
         style={{
           fontWeight: "bolder",
+          top: isDesktop ? "170px" : "140px",
         }}
       >
         <div className={styles.columnBox}>
@@ -55,7 +58,7 @@ export default function Work() {
                   <li>Frontend Development</li>
                 </ul>
                 <span></span>
-                <p style={{ marginTop: "20px" }}>
+                <p style={{ marginTop: "10px" }}>
                   See the Galileo website{" "}
                   <span>
                     <a
@@ -66,7 +69,7 @@ export default function Work() {
                     </a>
                   </span>
                 </p>
-                <p style={{ marginTop: "20px" }}>
+                <p style={{ marginTop: "10px" }}>
                   See the PanOptic website{" "}
                   <span>
                     <a
@@ -113,7 +116,7 @@ export default function Work() {
                   <li>Backend development (databases & APIs)</li>
                   <li>Security & Networking</li>
                 </ul>
-                <p style={{ marginTop: "20px" }}>
+                <p style={{ marginTop: "10px" }}>
                   See the course{" "}
                   <span>
                     <a
@@ -152,7 +155,7 @@ export default function Work() {
                   <li>Cluster Security & Networking</li>
                   <li>Exam prep for CKA Test</li>
                 </ul>
-                <p style={{ marginTop: "20px" }}>
+                <p style={{ marginTop: "10px" }}>
                   See the course{" "}
                   <span>
                     <a

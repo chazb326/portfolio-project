@@ -1,11 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import clsx from "clsx";
 import linkedin from "../../../public/linkedin-logo.webp";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function Contact() {
   const sections = clsx(styles.section, styles.rowBox);
+  const isDesktop = useMediaQuery("(min-width: 960px)");
 
   return (
     <main className={styles.main}>
@@ -13,6 +17,7 @@ export default function Contact() {
         className={styles.pageContent}
         style={{
           fontWeight: "bolder",
+          top: isDesktop ? "170px" : "140px",
         }}
       >
         <div className={styles.columnBox}>

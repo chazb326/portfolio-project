@@ -9,7 +9,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 
 export default function Home() {
   const sections = clsx(styles.section, styles.columnBox);
-  const isDesktop = useMediaQuery("(min-width: 960px)");
+  const isDesktop = useMediaQuery("(min-width: 1048px)");
 
   return (
     <main className={styles.main}>

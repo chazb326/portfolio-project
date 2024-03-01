@@ -33,17 +33,12 @@
   top: 170px;
 }
 
-h2.header {
-  color: black;
-  font-size: 36px;
-}
-
 h4.headerSmall {
   font-size: larger;
 }
 
 img.work {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 8px auto;
   border-radius: 6px;
@@ -55,14 +50,8 @@ img.codecademy {
   margin: 12px auto;
 }
 
-img.freecodecamp {
-  width: 70%;
-  height: auto;
-  margin: 20px auto;
-}
-
 img.cka {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 8px auto;
   border-radius: 6px;

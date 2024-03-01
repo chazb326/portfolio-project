@@ -16,7 +16,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const isDesktop = useMediaQuery("(min-width: 960px)");
+  const isDesktop = useMediaQuery("(min-width: 1048px)");
   const [menuActive, setMenuActive] = useState(false);
 
   // useEffect(() => {
@@ -29,7 +29,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body style={{ backgroundColor: "rgba(30, 107, 76, 0.3)" }}>
+      <body style={{ backgroundColor: "rgba(145, 129, 81, 0.5)" }}>
         <header>
           {isDesktop ? (
             <div className={styles.navContainer}>
@@ -66,6 +66,16 @@ export default function RootLayout({
                   href={"/contact"}
                 >
                   Contact
+                </Link>
+                <Link
+                  className={clsx(styles.link, {
+                    [styles.active]: usePathname() == "/react-projects",
+                  })}
+                  onClick={navClick}
+                  prefetch={true}
+                  href={"/react-projects"}
+                >
+                  React Projects
                 </Link>
               </ul>
             </div>
@@ -109,6 +119,16 @@ export default function RootLayout({
                     href={"/contact"}
                   >
                     Contact
+                  </Link>
+                  <Link
+                    className={clsx(styles.link, {
+                      [styles.active]: usePathname() == "/react-tasks",
+                    })}
+                    onClick={navClick}
+                    prefetch={true}
+                    href={"/react-tasks"}
+                  >
+                    React Tasks
                   </Link>
                 </ul>
               </div>

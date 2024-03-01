@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import galileoPanoptic from "../../../public/galileo-panoptic.jpg";
 import codecademy from "../../../public/Codecademy.svg";
+import freecodecamp from "../../../public/freecodecamp-logo.svg";
 import cka from "../../../public/cka-course.png";
 import clsx from "clsx";
 import { Divider } from "../components/Divider";
@@ -13,10 +14,11 @@ import useMediaQuery from "../hooks/useMediaQuery";
 export default function Work() {
   const sections = clsx(styles.section, styles.columnBox);
   const sectionDrawers = clsx(styles.sectionDrawer, styles.columnBox);
-  const isDesktop = useMediaQuery("(min-width: 960px)");
+  const isDesktop = useMediaQuery("(min-width: 1048px)");
   const [drawerOne, setDrawerOne] = useState(false);
   const [drawerTwo, setDrawerTwo] = useState(false);
   const [drawerThree, setDrawerThree] = useState(false);
+  const [drawerFour, setDrawerFour] = useState(false);
 
   return (
     <main className={styles.main}>
@@ -41,6 +43,7 @@ export default function Work() {
                 setDrawerOne(!drawerOne);
                 setDrawerTwo(false);
                 setDrawerThree(false);
+                setDrawerFour(false);
               }}
             >
               {drawerOne ? (
@@ -98,6 +101,7 @@ export default function Work() {
                 setDrawerOne(false);
                 setDrawerTwo(!drawerTwo);
                 setDrawerThree(false);
+                setDrawerFour(false);
               }}
             >
               {drawerTwo ? (
@@ -138,6 +142,7 @@ export default function Work() {
                 setDrawerOne(false);
                 setDrawerTwo(false);
                 setDrawerThree(!drawerThree);
+                setDrawerFour(false);
               }}
             >
               {drawerThree ? (
@@ -161,6 +166,51 @@ export default function Work() {
                     <a
                       href="https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/"
                       title="Udemy Certified Kubernetes Administrator Course"
+                    >
+                      HERE
+                    </a>
+                  </span>
+                </p>
+              </div>
+            )}
+          </section>
+          <section className={sections}>
+            <Image
+              className={styles.freecodecamp}
+              src={freecodecamp}
+              alt="freecodecamp.org"
+            />
+            <button
+              className={styles.button}
+              onClick={() => {
+                setDrawerOne(false);
+                setDrawerTwo(false);
+                setDrawerThree(false);
+                setDrawerFour(!drawerFour);
+              }}
+            >
+              {drawerFour ? (
+                <span>&#8201;See less &#8743;&#8201;&#8201;</span>
+              ) : (
+                <span>&#8201;See more &#8744;&#8201;&#8201;</span>
+              )}
+            </button>
+            {drawerFour && (
+              <div className={sectionDrawers}>
+                <h3>What am I learning through this React course?</h3>
+                <ul className={styles.skillList}>
+                  <li>Conditional rendering</li>
+                  <li>Building component-based architecture</li>
+                  <li>Consuming APIs and utilizing data</li>
+                  <li>Creating and using React hooks</li>
+                  <li>State management</li>
+                </ul>
+                <p style={{ marginTop: "10px" }}>
+                  See the course{" "}
+                  <span>
+                    <a
+                      href="https://www.freecodecamp.org/news/master-react-by-building-25-projects/?ref=dailydev"
+                      title="Master React by Building 25 Projects"
                     >
                       HERE
                     </a>

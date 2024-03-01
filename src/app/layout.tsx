@@ -122,13 +122,13 @@ export default function RootLayout({
                   </Link>
                   <Link
                     className={clsx(styles.link, {
-                      [styles.active]: usePathname() == "/react-tasks",
+                      [styles.active]: usePathname() == "/react-projects",
                     })}
                     onClick={navClick}
                     prefetch={true}
-                    href={"/react-tasks"}
+                    href={"/react-projects"}
                   >
-                    React Tasks
+                    React Projects
                   </Link>
                 </ul>
               </div>

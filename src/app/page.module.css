@@ -65,7 +65,6 @@
   font-size: medium;
   list-style-type: armenian;
   font-size: x-large;
-  text-wrap: nowrap;
 }
 
 .mobileNavLinks {
@@ -80,7 +79,7 @@
   font-size: medium;
   list-style-type: armenian;
   font-size: x-large;
-  text-wrap: nowrap;
+  text-align: center;
 }
 
 .link {

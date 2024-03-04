@@ -114,7 +114,20 @@ export default function Home() {
                   Work
                 </Link>
               </span>{" "}
-              page on this site. Thanks!
+              page on this site - to see some react components I&apos;ve built,
+              check out the{" "}
+              <span>
+                <Link
+                  prefetch={true}
+                  href={"/react-projects"}
+                  className={styles.link}
+                  style={{ fontSize: "large" }}
+                >
+                  React Projects
+                </Link>
+              </span>{" "}
+              page on this site. And lastly, this site is mobile friendly, so be
+              sure to check that out. Thanks!
             </p>
           </section>
         )}

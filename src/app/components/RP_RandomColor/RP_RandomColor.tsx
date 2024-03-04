@@ -42,7 +42,7 @@ const RP_RandomColor = () => {
         className={styles.container}
         style={{
           width: "100vw",
-          height: "60vh",
+          height: "70vh",
           background: color,
         }}
       >
@@ -88,7 +88,8 @@ const RP_RandomColor = () => {
             gap: "20px",
             color: "#fff",
             fontSize: isDesktop ? "60px" : "20px",
-            marginTop: "70px",
+            marginTop: "60px",
+            marginBottom: "30px",
           }}
         >
           <h3>{typeOfColor === "rgb" ? "RGB Color" : "HEX Color"}</h3>

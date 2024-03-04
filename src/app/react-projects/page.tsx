@@ -9,7 +9,8 @@ import clsx from "clsx";
 import { Divider } from "../components/Divider";
 import { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
-import { RT_Accordian } from "../components/RT_Accordian";
+import { RP_Accordian } from "../components/RP_Accordian";
+import { RP_RandomColor } from "../components/RP_RandomColor";
 
 export default function ReactTasks() {
   const isDesktop = useMediaQuery("(min-width: 1048px)");
@@ -23,7 +24,13 @@ export default function ReactTasks() {
           top: isDesktop ? "170px" : "140px",
         }}
       >
-        <RT_Accordian />
+        <RP_Accordian />
+        <br />
+        <Divider color="black" width={100} />
+        <RP_RandomColor />
+        <br />
+        <Divider color="black" width={100} />
+        <br />
       </div>
     </main>
   );

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import styles from "./RT_Accordian.module.css";
+import styles from "./RP_Accordian.module.css";
 import data from "./data";
 import { Divider } from "../Divider";
 
 //need single selection
 //and multiple selection
 
-const RT_Accordian = () => {
+const RP_Accordian = () => {
   const [selected, setSelected] = useState<string | null>(null);
   const [enableMultiSelection, setEnableMultiSelection] =
     useState<boolean>(false);
@@ -76,10 +76,8 @@ const RT_Accordian = () => {
           )}
         </div>
       </div>
-      <br />
-      <Divider color="black" width={100} />
     </>
   );
 };
 
-export { RT_Accordian };
+export { RP_Accordian };

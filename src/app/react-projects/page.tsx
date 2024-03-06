@@ -11,6 +11,7 @@ import { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { RP_Accordian } from "../components/RP_Accordian";
 import { RP_RandomColor } from "../components/RP_RandomColor";
+import { RP_StarRating } from "../components/RP_StarRating";
 
 export default function ReactTasks() {
   const isDesktop = useMediaQuery("(min-width: 1048px)");
@@ -28,6 +29,9 @@ export default function ReactTasks() {
         <br />
         <Divider color="black" width={100} />
         <RP_RandomColor />
+        <br />
+        <Divider color="black" width={100} />
+        <RP_StarRating noOfStars={10} />
         <br />
         <Divider color="black" width={100} />
         <br />

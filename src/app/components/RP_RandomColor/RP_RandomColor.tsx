@@ -42,7 +42,7 @@ const RP_RandomColor = () => {
         className={styles.container}
         style={{
           width: "100vw",
-          height: isDesktop ? "70vh" : "50vh",
+          height: "50vh",
           background: color,
         }}
       >
@@ -87,7 +87,7 @@ const RP_RandomColor = () => {
             flexDirection: "column",
             gap: "20px",
             color: "#fff",
-            fontSize: isDesktop ? "60px" : "20px",
+            fontSize: isDesktop ? "60px" : "24px",
             marginTop: "60px",
             marginBottom: "30px",
           }}

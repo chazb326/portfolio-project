@@ -23,6 +23,17 @@ h2.header {
   font-size: 36px;
 }
 
+.star_rating {
+}
+
+.active {
+  color: #fff700;
+}
+
+.inactive {
+  color: #000;
+}
+
 .container {
   gap: 10px;
   display: flex;
@@ -30,7 +41,6 @@ h2.header {
   align-items: center;
   justify-content: flex-start;
   padding: 10px;
-  margin-bottom: 0;
 }
 
 .container button {

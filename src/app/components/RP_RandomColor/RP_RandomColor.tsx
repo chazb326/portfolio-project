@@ -87,7 +87,7 @@ const RP_RandomColor = () => {
             flexDirection: "column",
             gap: "20px",
             color: "#fff",
-            fontSize: isDesktop ? "60px" : "24px",
+            fontSize: isDesktop ? "60px" : "20px",
             marginTop: "60px",
             marginBottom: "30px",
           }}

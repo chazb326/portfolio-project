@@ -27,7 +27,7 @@ const RP_StarRating = ({ noOfStars }: RP_StarRatingProps) => {
   return (
     <>
       <h2 className={styles.header}>Star Rating</h2>
-      <div className={styles.star_rating}>
+      <div>
         {[...Array(noOfStars)].map((_, index) => {
           //increment index by 1 to get the star #
           index += 1;

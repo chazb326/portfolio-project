@@ -42,6 +42,7 @@ const RP_StarRating = ({ noOfStars }: RP_StarRatingProps) => {
               onMouseMove={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave()}
               size={isDesktop ? 40 : 30}
+              style={{ cursor: "pointer" }}
             />
           );
         })}

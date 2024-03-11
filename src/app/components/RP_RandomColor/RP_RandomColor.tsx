@@ -42,7 +42,7 @@ const RP_RandomColor = () => {
         className={styles.container}
         style={{
           width: "100vw",
-          height: "50vh",
+          height: isDesktop ? "70vh" : "50vh",
           background: color,
         }}
       >

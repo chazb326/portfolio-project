@@ -13,6 +13,7 @@ import { RP_Accordian } from "../components/RP_Accordian";
 import { RP_RandomColor } from "../components/RP_RandomColor";
 import { RP_StarRating } from "../components/RP_StarRating";
 import { RP_ImageSlider } from "../components/RP_ImageSlider";
+import { RP_LoadMoreData } from "../components/RP_LoadMoreData";
 
 export default function ReactTasks() {
   const isDesktop = useMediaQuery("(min-width: 1048px)");
@@ -40,6 +41,9 @@ export default function ReactTasks() {
           page={"1"}
           limit={"10"}
         />
+        <br />
+        <Divider color="black" width={100} />
+        <RP_LoadMoreData />
         <br />
         <Divider color="black" width={100} />
         <br />

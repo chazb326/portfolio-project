@@ -80,6 +80,21 @@ export default function Home() {
                 page on this site. And lastly, this site is mobile friendly, so
                 be sure to check that out. Thanks!
               </p>
+
+              <p>
+                (also check out my GitHub Page!{" "}
+                <span>
+                  <Link
+                    style={{ fontSize: "large" }}
+                    prefetch={true}
+                    href={"https://github.com/chazb326"}
+                    className={styles.link}
+                  >
+                    @chazb326
+                  </Link>
+                </span>
+                )
+              </p>
             </div>
           </section>
         ) : (
@@ -139,6 +154,21 @@ export default function Home() {
               </span>{" "}
               page on this site. And lastly, this site is mobile friendly, so be
               sure to check that out. Thanks!
+            </p>
+
+            <p>
+              (also check out my GitHub Page!{" "}
+              <span>
+                <Link
+                  style={{ fontSize: "large" }}
+                  prefetch={true}
+                  href={"https://github.com/chazb326"}
+                  className={styles.link}
+                >
+                  @chazb326
+                </Link>
+              </span>
+              )
             </p>
           </section>
         )}

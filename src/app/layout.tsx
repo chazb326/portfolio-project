@@ -16,7 +16,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const isDesktop = useMediaQuery("(min-width: 1048px)");
+  const isDesktop = useMediaQuery("(min-width: 1100px)");
   const [menuActive, setMenuActive] = useState(false);
 
   // useEffect(() => {
@@ -45,7 +45,7 @@ export default function RootLayout({
                 >
                   About Me
                 </Link>
-
+                <span>|</span>
                 <Link
                   className={clsx(styles.link, {
                     [styles.active]: usePathname() == "/work",
@@ -56,7 +56,7 @@ export default function RootLayout({
                 >
                   Work
                 </Link>
-
+                <span>|</span>
                 <Link
                   className={clsx(styles.link, {
                     [styles.active]: usePathname() == "/contact",
@@ -67,6 +67,7 @@ export default function RootLayout({
                 >
                   Contact
                 </Link>
+                <span>|</span>
                 <Link
                   className={clsx(styles.link, {
                     [styles.active]: usePathname() == "/react-projects",
@@ -76,6 +77,17 @@ export default function RootLayout({
                   href={"/react-projects"}
                 >
                   React Projects
+                </Link>
+                <span>|</span>
+                <Link
+                  className={clsx(styles.link, {
+                    [styles.active]: usePathname() == "/spotify-project",
+                  })}
+                  onClick={navClick}
+                  prefetch={true}
+                  href={"/spotify-project"}
+                >
+                  Spotify Project
                 </Link>
               </ul>
             </div>
@@ -120,6 +132,7 @@ export default function RootLayout({
                   >
                     Contact
                   </Link>
+
                   <Link
                     className={clsx(styles.link, {
                       [styles.active]: usePathname() == "/react-projects",
@@ -129,6 +142,17 @@ export default function RootLayout({
                     href={"/react-projects"}
                   >
                     React Projects
+                  </Link>
+
+                  <Link
+                    className={clsx(styles.link, {
+                      [styles.active]: usePathname() == "/spotify-project",
+                    })}
+                    onClick={navClick}
+                    prefetch={true}
+                    href={"/spotify-project"}
+                  >
+                    Spotify Project
                   </Link>
                 </ul>
               </div>

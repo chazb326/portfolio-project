@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  width: 200px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  color: white;
+  width: 500px;
+  width: fit-content;
+  border-radius: 10px;
+  min-height: 300px;
+  margin: 30px auto 60px;
+  background-color: black;
+}
+
+.form_input {
+  background-color: #eeeeee;
+  border: 1px solid #3a3a3a;
+  padding: 8px;
+  font-size: medium;
+  width: 300px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.form_label {
+  font-weight: 600;
+  font-size: larger;
+  width: fit-content;
+  text-wrap: nowrap;
+}
+
+.button {
+  padding: 12px;
+  font-size: x-large;
+  color: white;
+  text-wrap: nowrap;
+  border-radius: 40px;
+  border: none;
+  background-color: rgb(113, 45, 170);
+  text-decoration: none;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s;
+}
+
+.button:active {
+  transform: scale(0.95);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s;
+}
+
+.inactive {
+  pointer-events: none;
+  cursor: default;
+  color: gray;
+  background-color: lightgray;
+  border: 2px solid gray;
+}

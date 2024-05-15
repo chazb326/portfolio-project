@@ -14,7 +14,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 export default function Work() {
   const sections = clsx(styles.section, styles.columnBox);
   const sectionDrawers = clsx(styles.sectionDrawer, styles.columnBox);
-  const isDesktop = useMediaQuery("(min-width: 1048px)");
+  const isDesktop = useMediaQuery("(min-width: 1100px)");
   const [drawerOne, setDrawerOne] = useState(false);
   const [drawerTwo, setDrawerTwo] = useState(false);
   const [drawerThree, setDrawerThree] = useState(false);

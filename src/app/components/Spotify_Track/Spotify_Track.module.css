@@ -1,0 +1,45 @@
+.container {
+  padding: 6px;
+  padding-bottom: 12px;
+  font-size: larger;
+  width: 95%;
+  margin: 10px;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+}
+
+.album {
+  display: flex;
+  align-items: center;
+}
+
+.song {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.button {
+  width: 10%;
+  padding: 6px;
+  font-size: xx-large;
+  background-color: rgba(203, 245, 92, 0);
+  border: none;
+  color: rgba(203, 245, 92, 1);
+  text-wrap: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  transition: all 0.25s;
+}
+
+.button:active {
+  transform: scale(0.95);
+  transition: all 0.1s;
+}

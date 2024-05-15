@@ -16,7 +16,7 @@ import { RP_ImageSlider } from "../components/RP_ImageSlider";
 import { RP_LoadMoreData } from "../components/RP_LoadMoreData";
 
 export default function ReactTasks() {
-  const isDesktop = useMediaQuery("(min-width: 1048px)");
+  const isDesktop = useMediaQuery("(min-width: 1100px)");
 
   return (
     <main className={styles.main}>

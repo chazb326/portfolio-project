@@ -3,7 +3,7 @@
 import React, { SetStateAction, useCallback, useEffect, useState } from "react";
 import styles from "./Spotify_GetToken.module.css";
 import clsx from "clsx";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { getURL, getLocationOrigin } from "next/dist/shared/lib/utils";
 import useMediaQuery from "../../hooks/useMediaQuery";
 
@@ -18,7 +18,7 @@ const Spotify_GetToken = ({
 }: Spotify_GetTokenProps) => {
   const [code, setCode] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
-  const [pathname, setPathname] = useState<string>(getURL());
+  const [pathname, setPathname] = useState<string>(usePathname());
   const [clientId, setClientId] = useState<string>("");
   const authorizationEndpoint = "https://accounts.spotify.com/authorize";
   const tokenEndpoint = "https://accounts.spotify.com/api/token";

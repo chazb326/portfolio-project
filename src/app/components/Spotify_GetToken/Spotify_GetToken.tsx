@@ -68,8 +68,8 @@ const Spotify_GetToken = ({
     const url = location.href;
     const { protocol, hostname, port } = location;
     const origin = protocol + "//" + hostname + (port ? ":" + port : "");
-    setRedirectUrl(`${origin}/spotify-project`);
-    console.log(`${origin}/spotify-project`);
+    setRedirectUrl(`${origin}/spotify-project/`);
+    console.log(`${origin}/spotify-project/`);
 
     if (url.includes("code=")) {
       setPathname(url);
@@ -81,7 +81,7 @@ const Spotify_GetToken = ({
     if (_clientId !== null) {
       setClientId(_clientId);
     }
-  }, [pathname, setPathname, setCode, setClientId]);
+  }, [pathname, setPathname, setCode, setClientId, setRedirectUrl]);
 
   // Soptify API Calls
   const getToken = async () => {

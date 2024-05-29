@@ -19,11 +19,12 @@ const Spotify_GetToken = ({
   const [code, setCode] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
   const [pathname, setPathname] = useState<string>(usePathname());
+  const [origin, setOrigin] = useState<string>("");
   const [clientId, setClientId] = useState<string>("");
   const authorizationEndpoint = "https://accounts.spotify.com/authorize";
   const tokenEndpoint = "https://accounts.spotify.com/api/token";
   const scope = "user-read-private user-read-email";
-  const redirectUrl = `${getLocationOrigin()}/spotify-project`;
+  const redirectUrl = `${origin}/spotify-project`;
   const isDesktop = useMediaQuery("(min-width: 1100px)");
 
   async function redirectToSpotifyAuthorize() {
@@ -66,6 +67,9 @@ const Spotify_GetToken = ({
 
   useEffect(() => {
     const url = location.href;
+    const { protocol, hostname, port } = window.location;
+    const origin = protocol + "//" + hostname + (port ? ":" + port : "");
+    setOrigin(origin);
 
     if (url.includes("code=")) {
       setPathname(url);

@@ -4,7 +4,7 @@ import React, { SetStateAction, useCallback, useEffect, useState } from "react";
 import styles from "./Spotify_GetToken.module.css";
 import clsx from "clsx";
 import { usePathname, useSearchParams } from "next/navigation";
-import { getURL, getLocationOrigin } from "next/dist/shared/lib/utils";
+import { getLocationOrigin } from "next/dist/shared/lib/utils";
 import useMediaQuery from "../../hooks/useMediaQuery";
 
 interface Spotify_GetTokenProps {
@@ -65,7 +65,7 @@ const Spotify_GetToken = ({
   }
 
   useEffect(() => {
-    const url = getURL();
+    const url = location.href;
 
     if (url.includes("code=")) {
       setPathname(url);
